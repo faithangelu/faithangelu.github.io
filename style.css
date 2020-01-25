@@ -1,0 +1,24 @@
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    /* color: black; */
+}
+
+.navbar{
+    z-index:9; 
+   position: absolute;
+   width: 100%;
+}
+
+#fullCarousel{
+    position:absolute;
+    width:100%;
+    top:0;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #ffffff !important;
+    text-transform: uppercase;
+}
