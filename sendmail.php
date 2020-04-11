@@ -9,8 +9,14 @@ $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
 
 // More headers
-// $headers .= 'From: <webmaster@example.com>' . "\r\n";
+$headers .= 'From: <$_POST('portfolio-contact-email')>' . "\r\n";
 // $headers .= 'Cc: myboss@example.com' . "\r\n";
 
-mail($to,$subject,$message,$_POST('portfolio-contact-email'));
+$send = mail($to,$subject,$message,$headers;
+
+if ($send == TRUE) {
+	echo "<script type='text/javascript'>alert('submitted successfully!')</script>";
+else {
+	echo "<script type='text/javascript'>alert('failed!')</script>";
+}
 ?>
